@@ -34,6 +34,14 @@ class CardTest {
     }
 
     @Test
+    public void cardDisplaysSuitAsSymbol() throws Exception {
+        Card spadesCard = new Card(Suit.SPADES, "9");
+
+        assertThat(spadesCard.display())
+                .contains("│    ♠    │");
+    }
+
+    @Test
     public void suitOfHeartsOrDiamondsIsDisplayedInRed() throws Exception {
         // given a card with Hearts or Diamonds
         Card heartsCard = new Card(Suit.HEARTS, "10");

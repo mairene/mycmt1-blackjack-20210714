@@ -1,7 +1,5 @@
 package com.jitterted.ebp.blackjack;
 
-import java.util.List;
-
 public enum Suit {
     HEARTS("♥", true),
     CLUBS("♣", false),
@@ -11,7 +9,6 @@ public enum Suit {
     private final String symbol;
     private final boolean isRed;
 
-    //constructor
     Suit(String symbol, boolean isRed) {
         this.symbol = symbol;
         this.isRed = isRed;
